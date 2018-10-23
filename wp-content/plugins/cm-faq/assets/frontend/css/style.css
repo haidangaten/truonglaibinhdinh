@@ -1,0 +1,245 @@
+/*
+ * CMFAQ Plugin
+ */
+
+.cmfaq{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.cmfaq-one-column .cmfaq-main{
+    width: 100%;
+}
+.cmfaq-two-columns .cmfaq-main{
+    float: right;
+    width: 70%;
+}
+.cmfaq-two-columns .cmfaq-side{
+    float: left;
+    width: 30%;
+}
+#cmfaq *{
+    box-sizing: border-box !important;
+}
+#cmfaq .cmfaq-clear{
+    clear: both;
+}
+
+/*
+ * Searchbox
+ */
+#cmfaq .cmfaq-search{
+    position: relative;
+    margin: 0 0 30px 0;
+    padding: 0;
+}
+#cmfaq .cmfaq-search .cmfaq-search-input, #cmfaq .cmfaq-search .cmfaq-search-input[type="search"]{
+    width: 100%;
+}
+#cmfaq .cmfaq-search .cmfaq-search-suggestion-wrapper{
+    position: absolute;
+    width: 100%;    
+    z-index: 1003;
+    margin: 0;
+    padding: 0;
+}
+#cmfaq .cmfaq-search ul.cmfaq-search-suggestion{
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#cmfaq .cmfaq-search ul.cmfaq-search-suggestion li{
+    background: #fff;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-top:0;
+    border-bottom:0;
+    padding: 0;
+    margin: 0;
+}
+#cmfaq .cmfaq-search ul.cmfaq-search-suggestion li a{
+    position: relative;
+    text-decoration: none;
+    border: 0;
+    display: block;
+    background: #fff;
+    padding: 4px;
+    box-shadow: none;
+    outline: none;
+}
+#cmfaq .cmfaq-search ul.cmfaq-search-suggestion li a:hover,
+#cmfaq .cmfaq-search ul.cmfaq-search-suggestion li a:active,
+#cmfaq .cmfaq-search ul.cmfaq-search-suggestion li a:focus{
+    background: #eee;
+}
+#cmfaq .cmfaq-search ul.cmfaq-search-suggestion li:first-child{
+    border-top: 1px solid #ddd;
+}
+#cmfaq .cmfaq-search ul.cmfaq-search-suggestion li:last-child{
+    border-bottom: 1px solid #ddd;
+}
+#cmfaq .cmfaq-search .cmfaq-search-suggestion-post{
+    margin-right: 60px;
+}
+#cmfaq .cmfaq-search .cmfaq-search-suggestion-rating{
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    padding-right: 4px;
+    margin-top: -12px;
+    text-align: right;
+    width: 75px;
+    height: 24px;
+    color: #333333;
+}
+#cmfaq .cmfaq-search .cmfaq-search-suggestion-title{
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #333333;
+}
+#cmfaq .cmfaq-search .cmfaq-search-suggestion-content{
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+    color: #999999;
+}
+
+
+/*
+ * Searchbox [x]
+ */
+#cmfaq .cmfaq-clearable{
+    background: #fff url(data:image/gif;base64,R0lGODlhBwAHAIAAAP///5KSkiH5BAAAAAAALAAAAAAHAAcAAAIMTICmsGrIXnLxuDMLADs=) no-repeat right -10px center;
+    padding-right: 18px; /* Use the same right padding (18) in jQ! */
+    transition: background 0.4s;
+}
+#cmfaq .cmfaq-clearable.x  { background-position: right 10px center; }
+#cmfaq .cmfaq-clearable.onX{ cursor: pointer; }
+
+/*
+ * Categories list
+ */
+#cmfaq .cmfaq-categories{
+    margin-bottom: 30px;
+}
+#cmfaq .cmfaq-categories .cmfaq-categories-title{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+    font-size: 22px;
+    font-weight: bold;
+}
+#cmfaq .cmfaq-categories ul.cmfaq-categories-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#cmfaq .cmfaq-categories ul.cmfaq-categories-list.children{
+    padding-left: 15px;
+}
+#cmfaq .cmfaq-categories .active{
+    font-weight: bold;
+}
+
+/*
+ * Tags list
+ */ 
+#cmfaq .cmfaq-tags .cmfaq-tags-title{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*
+ * Posts tax list (categories + search results)
+ */
+#cmfaq .cmfaq-tax .cmfaq-tax-post-title{
+    margin: 30px 0 5px 0;
+    padding: 0;
+    font-size: 22px;
+    font-weight: bold;    
+}
+#cmfaq .cmfaq-tax .cmfaq-rating{
+    margin: 5px 0px 30px 0px;
+}
+#cmfaq .cmfaq-tax .cmfaq-tax-post-content p{
+    margin: 0;
+}
+
+/*
+ * Post details
+ */
+#cmfaq .cmfaq-post .cmfaq-post-related-title{
+    margin: 30px 0 5px 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+#cmfaq .cmfaq-post .cmfaq-post-tags{
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0
+}
+#cmfaq .cmfaq-post .cmfaq-rating{
+    margin: 5px 0 30px 0;
+}
+
+/*
+ * Frontpage tiles
+ */
+#cmfaq .cmfaq-tile{
+    float: left;
+    width: 50%;
+    margin-bottom: 30px;
+    padding-right: 30px;
+}
+#cmfaq .cmfaq-tile .cmfaq-tile-title{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+#cmfaq .cmfaq-tile .cmfaq-tile-post{
+    margin: 5px 0;
+    padding: 0;
+}
+#cmfaq .cmfaq-tile .cmfaq-tile-more{
+    margin: 5px 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+/*
+ * Breadcrumb
+ */
+#cmfaq .cmfaq-breadcrumb{
+    margin-bottom: 30px;
+    overflow: auto;
+}
+
+/*
+ * Mobile fix
+ */
+@media screen and (max-width: 480px) {
+    .cmfaq-two-columns .cmfaq-main{
+        float: none;
+        width: auto;
+    }
+    .cmfaq-two-columns .cmfaq-side{
+        float: none;
+        width: auto;
+    }
+    #cmfaq .cmfaq-tile{
+        float: none;
+        width: auto;
+    }
+}
